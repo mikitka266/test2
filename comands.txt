@@ -1,0 +1,717 @@
+ikitka@mikitka:~$ cd somefolder/
+mikitka@mikitka:~/somefolder$ ll
+итого 28
+drwxrwxr-x  3 mikitka mikitka  4096 апр  9 16:08  ./
+drwxr-xr-x 47 mikitka mikitka  4096 апр  4 20:49  ../
+-rw-rw-r--  1 mikitka mikitka     8 мар 27 20:42  test.txt
+drwx------  2 mikitka mikitka  4096 апр  9 16:08 'Сертификат Итоговое тестирование по освоению специализации Программист. _ GeekBrains_files'/
+-rw-rw-r--  1 mikitka mikitka 11725 апр  9 16:08 'Сертификат Итоговое тестирование по освоению специализации Программист. _ GeekBrains.html'
+mikitka@mikitka:~/somefolder$ mkdir animals/
+mikitka@mikitka:~/somefolder$ cd animals/
+mikitka@mikitka:~/somefolder/animals$ touch pets.txt
+mikitka@mikitka:~/somefolder/animals$ touch pack.txt
+mikitka@mikitka:~/somefolder/animals$ nano pets.txt 
+mikitka@mikitka:~/somefolder/animals$ nano pack.txt 
+mikitka@mikitka:~/somefolder/animals$ cat pack.txt 
+Horse Luba
+Horse Zoyka
+Camel Serg
+
+mikitka@mikitka:~/somefolder/animals$ cat pets.txt 
+dog Aniken 
+cat Barsik
+cat Tihon
+
+mikitka@mikitka:~/somefolder/animals$ sudo apt update
+[sudo] пароль для mikitka: 
+Сущ:1 http://security.ubuntu.com/ubuntu focal-security InRelease               
+Пол:2 http://dl.google.com/linux/chrome/deb stable InRelease [1 811 B]         
+Сущ:3 http://ppa.launchpad.net/somerville-dla-team/ppa/ubuntu bionic InRelease 
+Сущ:4 http://archive.ubuntu.com/ubuntu focal InRelease                         
+Ошб:2 http://dl.google.com/linux/chrome/deb stable InRelease                   
+  Следующие подписи не могут быть проверены, так как недоступен открытый ключ: NO_PUBKEY 4EB27DB2A3B88B8B
+Сущ:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease                 
+Сущ:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease               
+Сущ:7 http://archive.canonical.com/ubuntu focal InRelease                      
+Сущ:8 http://oem.archive.canonical.com focal InRelease                         
+Сущ:9 http://dell.archive.canonical.com focal InRelease                        
+Чтение списков пакетов… Готово            
+W: Ошибка GPG: http://dl.google.com/linux/chrome/deb stable InRelease: Следующие подписи не могут быть проверены, так как недоступен открытый ключ: NO_PUBKEY 4EB27DB2A3B88B8B
+E: Репозиторий «http://dl.google.com/linux/chrome/deb stable InRelease» не подписан.
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+N: Информацию о создании репозитория и настройках пользователя смотрите в справочной странице apt-secure(8).
+mikitka@mikitka:~/somefolder/animals$ search mysql
+
+Команда «search» не найдена. Возможно, вы имели в виду:
+
+  command 'fsearch' from snap fsearch (0.1.4)
+  command 'searchd' from deb sphinxsearch (2.2.11-2ubuntu2)
+  command 'vsearch' from deb vsearch (2.14.1-3build1)
+  command 'starch' from deb coop-computing-tools (7.0.22-1ubuntu1)
+  command 'csearch' from deb codesearch (0.0~hg20120502-3)
+  command 'setarch' from deb util-linux (2.34-0.1ubuntu9.3)
+  command 'esearch' from deb ncbi-entrez-direct (12.0.20190816+ds-1ubuntu0.2)
+
+See 'snap info <snapname>' for additional versions.
+
+mikitka@mikitka:~/somefolder/animals$ snap search mysql
+Название                   Версия               Издатель          Примечание  Описание
+mysql                      5.7.17               dataplatformbot   -           Experimental MySQL Community snap
+mysql-shell                8.0.23               canonical✓        -           MySQL Shell is an advanced client and code editor for MySQL Server.
+mysql-workbench-community  8.0.29               tonybolzan        -           MySQL Workbench
+mysql-query-profiler       1.0.2                kpro4             -           MySQL Query Profiler
+mysql-experimental         5.7.16               ltangvald         -           Experimental MySQL Community snap
+mysqld-exporter            v0.14.0              wolsen            -           Prometheus exporter for MySQL metrics
+nextcloud                  25.0.4snap1          nextcloud✓        -           Nextcloud Server - A safe home for all your data
+datagrip                   2023.1               jetbrains✓        classic     DataGrip
+digikam                    7.8.0                kde✓              -           Photo Management Program
+juju-backup-all            23.1                 canonical✓        -           Tool for backing up charms, local configs, and Juju controllers.
+query-exporter             2.8.1                ack✪              -           Export Prometheus metrics from SQL queries
+smonitor                   0.0.4beta-amd64      jes               -           Monitoring of server states (and other things)
+antares                    v0.7.7               fabio286          -           A modern, fast and productivity driven SQL client with a focus in UX.
+heidisql-wine              12.1                 kianda            -           HeidiSQL is a free and powerful database client
+logs                       0.0.9                paulageorge21     -           logs
+dbeaver-ce                 23.0.2.202304091457  dbeaver-corp      -           Universal Database Manager and SQL Client
+gogs                       0.1                  vtuson            -           golang based git server and ui
+forms814                   2.1.0                bankole7782       -           A comfort tool used when creating a form.
+statping                   0.90.61              hunterlong        -           Statping Server Monitoring with Status Page
+cdbc                       0.2.0                fnordahl          -           C library providing simple and easy to use interfaces to the ODBC API
+laurux                     3.68.8               damscot-p         -           Gestion Entreprise PME ERP / PGI et Caisse Point de Vente (POS) GNU GPL Français
+squirrelsql                4.3.0                jibel             -           A Java SQL client for any JDBC compliant database
+dbgate                     5.2.5                zputil            -           DbGate
+statping-ng                0.90.79              adamboutcher      -           Statping-ng Server Monitoring with Status Page
+tunl                       0.9.2                pjvds             -           Expose your localhost to the public via an secure tunnel
+vmcloud-nextcloud          1.0.0                victoriususm      -           Nextcloud 16.0.3 Optimized-Boosted
+sql-client                 0.7.2-beta           astoria-software  -           Cross-platform MySQL client made for developers. Fast, stable and developer friendly.
+gopherbin                  d22f416              gabriel-samfira   -           Gopherbin - A private pastebin written in Go and React
+statup                     0.79.91              hunterlong        -           Statup Server Monitoring with Status Page
+wal-g                      0.2.19               stub              classic     WAL archival and restoration tool for PostgreSQL
+mycli                      1.25.0               khiemdoan         -           mycli is a command line interface for MySQL, MariaDB, and Percona.
+sync-and-dump-s3           0.9                  scorching+shade   -           Sync aws s3 buckets and Upload dumps of mysql and mongodb
+restore-dump-s3            1.017                scorching+shade   -           Restore dumps of mysql and mongodb from aws s3 buckets
+trico                      2.6.1                ngudbhav          -           Convert your Excel Spreadsheet to a table/collection in MYSQL/MongoDB
+sqlmap                     1.7.tar              khiemdoan         -           Automatic SQL injection and database takeover tool
+xtrabackup                 8.0.29-22            dataplatformbot   -           Percona XtraBackup
+mikitka@mikitka:~/somefolder/animals$ snap install mysql-shell
+snap "mysql-shell" is already installed, see 'snap help refresh'
+mikitka@mikitka:~/somefolder/animals$ snap install digicam
+ошибка: snap-пакет "digicam" не найден
+mikitka@mikitka:~/somefolder/animals$ snap install digikam
+Automatically connect eligible plugs and slots of snap "digikam"               |
+Automatically connect eligible plugs and slots of snap "digikam"               \
+Automatically connect eligible plugs and slots of snap "digikam"               \
+Automatically connect eligible plugs and slots of snap "digikam"               \
+Automatically connect eligible plugs and slots of snap "digikam"               \ошибка: cannot perform the following tasks:
+- Загрузить пакет "kde-frameworks-5-96-qt-5-15-5-core20" (7) с канала "stable" (the download has been cancelled: context canceled)
+mikitka@mikitka:~/somefolder/animals$ dpkg -l
+Желаемый=неизвестно[u]/установить[i]/удалить[r]/вычистить[p]/зафиксировать[h]
+| Состояние=не[n]/установлен[i]/настроен[c]/распакован[U]/частично настроен[F]/
+            частично установлен[H]/trig-aWait/Trig-pend
+|/ Ошибка?=(нет)/требуется переустановка[R] (верхний регистр
+в полях состояния и ошибки указывает на ненормальную ситуацию)
+||/ Имя                                        Версия                          >
++++-==========================================-================================>
+ii  accountsservice                            0.6.55-0ubuntu12~20.04.5        >
+ii  acl                                        2.2.53-6                        >
+ii  acpi-support                               0.143                           >
+ii  acpid                                      1:2.0.32-1ubuntu1               >
+ii  adduser                                    3.118ubuntu2                    >
+ii  adwaita-icon-theme                         3.36.1-2ubuntu0.20.04.2         >
+ii  aisleriot                                  1:3.22.9-1                      >
+ii  alsa-base                                  1.0.25+dfsg-0ubuntu5            >
+ii  alsa-topology-conf                         1.2.2-1                         >
+ii  alsa-ucm-conf                              1.2.2-1ubuntu0.13               >
+ii  alsa-utils                                 1.2.2-1ubuntu2.1                >
+ii  amd64-microcode                            3.20191218.1ubuntu1             >
+ii  anacron                                    2.3-29                          >
+ii  apache2                                    2.4.41-4ubuntu3.14              >
+ii  apache2-bin                                2.4.41-4ubuntu3.14              >
+ii  apache2-data                               2.4.41-4ubuntu3.14              >
+ii  apache2-utils                              2.4.41-4ubuntu3.14              >
+ii  apg                                        2.2.3.dfsg.1-5                  >
+ii  app-install-data-partner                   19.04                           >
+ii  apparmor                                   2.13.3-7ubuntu5.2               >
+ii  apport                                     2.20.11-0ubuntu27.25            >
+ii  apport-gtk                                 2.20.11-0ubuntu27.25            >
+ii  apport-symptoms                            0.23                            >
+ii  appstream                                  0.12.10-2                       >
+ii  apt                                        2.0.9                           >
+ii  apt-config-icons                           0.12.10-2                       >
+ii  apt-config-icons-hidpi                     0.12.10-2                       >
+ii  apt-transport-https                        2.0.9                           >
+ii  apt-utils                                  2.0.9                           >
+ii  aptdaemon                                  1.1.1+bzr982-0ubuntu32.3        >
+ii  aptdaemon-data                             1.1.1+bzr982-0ubuntu32.3        >
+ii  apturl                                     0.5.2ubuntu19                   >
+ii  apturl-common                              0.5.2ubuntu19                   >
+ii  aspell                                     0.60.8-1ubuntu0.1               >
+ii  aspell-en                                  2018.04.16-0-1                  >
+ii  at-spi2-core                               2.36.0-2                        >
+ii  avahi-autoipd                              0.7-4ubuntu7.1                  >
+ii  avahi-daemon                               0.7-4ubuntu7.1                  >
+ii  avahi-utils                                0.7-4ubuntu7.1                  >
+ii  baobab                                     3.34.0-1                        >
+ii  base-files                                 11ubuntu5.7                     >
+ii  base-passwd                                3.5.47                          >
+ii  bash                                       5.0-6ubuntu1.2                  >
+ii  bash-completion                            1:2.10-1ubuntu1                 >
+ii  bc                                         1.07.1-2build1                  >
+ii  bind9-dnsutils                             1:9.16.1-0ubuntu2.14            >
+ii  bind9-host                                 1:9.16.1-0ubuntu2.14            >
+ii  bind9-libs:amd64                           1:9.16.1-0ubuntu2.14            >
+ii  binutils                                   2.34-6ubuntu1.4                 >
+ii  binutils-common:amd64                      2.34-6ubuntu1.4                 >
+ii  binutils-x86-64-linux-gnu                  2.34-6ubuntu1.4                 >
+ii  bluez                                      5.53-0ubuntu3.6                 >
+ii  bluez-cups                                 5.53-0ubuntu3.6                 >
+ii  bluez-obexd                                5.53-0ubuntu3.6                 >
+ii  bolt                                       0.9.1-2~ubuntu20.04.2           >
+ii  branding-ubuntu                            0.10                            >
+ii  bridge-utils                               1.6-2ubuntu1                    >
+ii  brltty                                     6.0+dfsg-4ubuntu6               >
+ii  bsdmainutils                               11.1.2ubuntu3                   >
+ii  bsdutils                                   1:2.34-0.1ubuntu9.3             >
+ii  btrfs-progs                                5.4.1-2                         >
+ii  bubblewrap                                 0.4.0-1ubuntu4                  >
+ii  busybox-initramfs                          1:1.30.1-4ubuntu6.4             >
+ii  busybox-static                             1:1.30.1-4ubuntu6.4             >
+ii  bzip2                                      1.0.8-2                         >
+ii  ca-certificates                            20211016ubuntu0.20.04.1         >
+ii  ca-certificates-java                       20190405ubuntu1                 >
+ii  casper                                     1.445.3                         >
+ii  cheese                                     3.34.0-1ubuntu1                 >
+ii  cheese-common                              3.34.0-1ubuntu1                 >
+ii  cifs-utils                                 2:6.9-1ubuntu0.2                >
+ii  colord-data                                1.4.4-2                         >
+ii  command-not-found                          20.04.6                         >
+ii  console-setup                              1.194ubuntu3                    >
+ii  console-setup-linux                        1.194ubuntu3                    >
+ii  containerd                                 1.6.12-0ubuntu1~20.04.1         >
+ii  coreutils                                  8.30-3ubuntu2                   >
+ii  cpio                                       2.13+dfsg-2ubuntu0.3            >
+ii  cpp                                        4:9.3.0-1ubuntu2                >
+ii  cpp-9                                      9.4.0-1ubuntu1~20.04.1          >
+ii  cracklib-runtime                           2.9.6-3.2                       >
+ii  crda                                       3.18-1build1                    >
+ii  cron                                       3.0pl1-136ubuntu1               >
+ii  cryptsetup-bin                             2:2.2.2-3ubuntu2.4              >
+rc  cryptsetup-initramfs                       2:2.2.2-3ubuntu2.3              >
+ii  cups                                       2.3.1-9ubuntu1.2                >
+ii  cups-browsed                               1.27.4-1                        >
+ii  cups-bsd                                   2.3.1-9ubuntu1.2                >
+ii  cups-client                                2.3.1-9ubuntu1.2                >
+ii  cups-common                                2.3.1-9ubuntu1.2                >
+ii  cups-core-drivers                          2.3.1-9ubuntu1.2                >
+ii  cups-daemon                                2.3.1-9ubuntu1.2                >
+ii  cups-filters                               1.27.4-1                        >
+ii  cups-filters-core-drivers                  1.27.4-1                        >
+ii  cups-ipp-utils                             2.3.1-9ubuntu1.2                >
+ii  cups-pk-helper                             0.2.6-1ubuntu3                  >
+ii  cups-ppdc                                  2.3.1-9ubuntu1.2                >
+ii  cups-server-common                         2.3.1-9ubuntu1.2                >
+ii  dash                                       0.5.10.2-6                      >
+ii  dbconfig-common                            2.0.13                          >
+ii  dbconfig-no-thanks                         2.0.13                          >
+ii  dbus                                       1.12.16-2ubuntu2.3              >
+ii  dbus-user-session                          1.12.16-2ubuntu2.3              >
+ii  dbus-x11                                   1.12.16-2ubuntu2.3              >
+ii  dc                                         1.07.1-2build1                  >
+ii  dconf-cli                                  0.36.0-1                        >
+ii  dconf-gsettings-backend:amd64              0.36.0-1                        >
+ii  dconf-service                              0.36.0-1                        >
+ii  dctrl-tools                                2.24-3                          >
+ii  debconf                                    1.5.73                          >
+ii  debconf-i18n                               1.5.73                          >
+ii  debconf-utils                              1.5.73                          >
+ii  debianutils                                4.9.1                           >
+ii  deja-dup                                   40.7-0ubuntu2                   >
+ii  dell-canonical-logo                        4                               >
+rc  dell-eula                                  1.11                            >
+ii  dell-linux-assistant                       2.2.0544                        >
+ii  dell-recovery                              1.64somerville11                >
+rc  dell-recovery-bootloader                   1.64somerville11                >
+ii  dell-recovery-casper                       1.64somerville11                >
+ii  dell-super-key                             0.04                            >
+ii  desktop-file-utils                         0.24-1ubuntu3                   >
+ii  dictionaries-common                        1.28.1                          >
+ii  diffutils                                  1:3.7-3                         >
+ii  dirmngr                                    2.2.19-3ubuntu2.2               >
+ii  distro-info                                0.23ubuntu1                     >
+ii  distro-info-data                           0.43ubuntu1.11                  >
+ii  dkms                                       2.8.1-5ubuntu2                  >
+ii  dmeventd                                   2:1.02.167-1ubuntu1             >
+ii  dmidecode                                  3.2-3                           >
+rc  dmraid                                     1.0.0.rc16-8ubuntu3             >
+ii  dmsetup                                    2:1.02.167-1ubuntu1             >
+ii  dmz-cursor-theme                           0.4.5ubuntu1                    >
+ii  dns-root-data                              2019052802                      >
+ii  dnsmasq-base                               2.80-1.1ubuntu1.6               >
+ii  dnsutils                                   1:9.16.1-0ubuntu2.14            >
+ii  docbook-xml                                4.5-9                           >
+ii  docker.io                                  20.10.21-0ubuntu1~20.04.1       >
+ii  dosfstools                                 4.1-2                           >
+ii  dpkg                                       1.19.7ubuntu3.2                 >
+ii  dpkg-dev                                   1.19.7ubuntu3.2                 >
+ii  dpkg-repack                                1.46                            >
+ii  drawing                                    0.4.11-1                        >
+ii  duplicity                                  0.8.11.1612-1                   >
+ii  dvd+rw-tools                               7.1-14build1                    >
+ii  e2fsprogs                                  1.45.5-2ubuntu1.1               >
+ii  ed                                         1.16-1                          >
+ii  efibootmgr                                 17-1                            >
+ii  eject                                      2.1.5+deb1+cvs20081104-14       >
+ii  emacsen-common                             3.0.4                           >
+ii  enchant-2                                  2.2.8-1ubuntu0.20.04.1          >
+ii  eog                                        3.36.3-0ubuntu1                 >
+ii  espeak-ng-data:amd64                       1.50+dfsg-6                     >
+ii  ethtool                                    1:5.4-1                         >
+ii  evince                                     3.36.10-0ubuntu1                >
+ii  evince-common                              3.36.10-0ubuntu1                >
+ii  evolution-data-server                      3.36.5-0ubuntu1                 >
+ii  evolution-data-server-common               3.36.5-0ubuntu1                 >
+ii  fdisk                                      2.34-0.1ubuntu9.3               >
+ii  file                                       1:5.38-4                        >
+ii  file-roller                                3.36.3-0ubuntu1.1               >
+ii  finalrd                                    6~ubuntu20.04.1                 >
+ii  findutils                                  4.7.0-1ubuntu1                  >
+ii  firefox                                    111.0.1+build2-0ubuntu0.20.04.1 >
+ii  firefox-locale-en                          111.0.1+build2-0ubuntu0.20.04.1 >
+ii  firefox-locale-ru                          111.0.1+build2-0ubuntu0.20.04.1 >
+ii  fist                                       0.07                            >
+ii  fontconfig                                 2.13.1-2ubuntu3                 >
+ii  fontconfig-config                          2.13.1-2ubuntu3                 >
+ii  fonts-arundina                             0.3.2-1                         >
+ii  fonts-beng                                 2:1.2                           >
+ii  fonts-beng-extra                           1.0-7                           >
+ii  fonts-dejavu                               2.37-1                          >
+ii  fonts-dejavu-core                          2.37-1                          >
+ii  fonts-dejavu-extra                         2.37-1                          >
+ii  fonts-deva                                 2:1.2                           >
+ii  fonts-deva-extra                           3.0-5                           >
+ii  fonts-droid-fallback                       1:6.0.1r16-1.1                  >
+ii  fonts-freefont-ttf                         20120503-10                     >
+ii  fonts-gargi                                2.0-4                           >
+ii  fonts-gubbi                                1.3-3                           >
+ii  fonts-gujr                                 2:1.3                           >
+ii  fonts-gujr-extra                           1.0.1-1                         >
+ii  fonts-guru                                 2:1.2                           >
+ii  fonts-guru-extra                           2.0-5                           >
+ii  fonts-indic                                2:1.3                           >
+ii  fonts-kacst                                2.01+mry-14                     >
+ii  fonts-kacst-one                            5.0+svn11846-10                 >
+ii  fonts-kalapi                               1.0-3                           >
+ii  fonts-khmeros-core                         5.0-7ubuntu1                    >
+ii  fonts-knda                                 2:1.2                           >
+ii  fonts-lao                                  0.0.20060226-9ubuntu1           >
+ii  fonts-liberation                           1:1.07.4-11                     >
+ii  fonts-liberation2                          2.1.0-1                         >
+ii  fonts-lklug-sinhala                        0.6-3                           >
+ii  fonts-lohit-beng-assamese                  2.91.5-1                        >
+ii  fonts-lohit-beng-bengali                   2.91.5-1                        >
+ii  fonts-lohit-deva                           2.95.4-4                        >
+ii  fonts-lohit-gujr                           2.92.4-4                        >
+ii  fonts-lohit-guru                           2.91.2-1                        >
+ii  fonts-lohit-knda                           2.5.4-2                         >
+ii  fonts-lohit-mlym                           2.92.2-1                        >
+ii  fonts-lohit-orya                           2.91.2-1                        >
+ii  fonts-lohit-taml                           2.91.3-1                        >
+ii  fonts-lohit-taml-classical                 2.5.4-1                         >
+ii  fonts-lohit-telu                           2.5.5-1                         >
+ii  fonts-mlym                                 2:1.2                           >
+ii  fonts-nakula                               1.0-3                           >
+ii  fonts-navilu                               1.2-2                           >
+ii  fonts-noto-cjk                             1:20190410+repack1-2            >
+ii  fonts-noto-color-emoji                     0~20200916-1~ubuntu20.04.1      >
+ii  fonts-noto-mono                            20200323-1build1~ubuntu20.04.1  >
+ii  fonts-opensymbol                           2:102.11+LibO6.4.7-0ubuntu0.20.0>
+ii  fonts-orya                                 2:1.2                           >
+ii  fonts-orya-extra                           2.0-6                           >
+ii  fonts-pagul                                1.0-7                           >
+ii  fonts-sahadeva                             1.0-4                           >
+ii  fonts-samyak-deva                          1.2.2-4                         >
+ii  fonts-samyak-gujr                          1.2.2-4                         >
+ii  fonts-samyak-mlym                          1.2.2-4                         >
+ii  fonts-samyak-taml                          1.2.2-4                         >
+ii  fonts-sarai                                1.0-2                           >
+ii  fonts-sil-abyssinica                       2.000-1                         >
+ii  fonts-sil-padauk                           4.000-1                         >
+ii  fonts-smc                                  1:7.1                           >
+ii  fonts-smc-anjalioldlipi                    7.1.2-1                         >
+ii  fonts-smc-chilanka                         1.400-1                         >
+ii  fonts-smc-dyuthi                           3.0.2-1                         >
+ii  fonts-smc-gayathri                         1.100-1                         >
+ii  fonts-smc-karumbi                          1.1.2-1                         >
+ii  fonts-smc-keraleeyam                       3.0.2-1                         >
+ii  fonts-smc-manjari                          1.710-1                         >
+ii  fonts-smc-meera                            7.0.3-1                         >
+ii  fonts-smc-rachana                          7.0.2-1                         >
+ii  fonts-smc-raghumalayalamsans               2.2.1-1                         >
+ii  fonts-smc-suruma                           3.2.3-1                         >
+ii  fonts-smc-uroob                            2.0.2-1                         >
+ii  ca-certificates                            20211016ubuntu0.20.04.1         >
+ii  ca-certificates-java                       20190405ubuntu1                 >
+ii  casper                                     1.445.3                         >
+ii  cheese                                     3.34.0-1ubuntu1                 >
+ii  cheese-common                              3.34.0-1ubuntu1                 >
+ii  cifs-utils                                 2:6.9-1ubuntu0.2                >
+ii  colord-data                                1.4.4-2                         >
+ii  command-not-found                          20.04.6                         >
+ii  console-setup                              1.194ubuntu3                    >
+ii  console-setup-linux                        1.194ubuntu3                    >
+ii  containerd                                 1.6.12-0ubuntu1~20.04.1         >
+ii  coreutils                                  8.30-3ubuntu2                   >
+ii  cpio                                       2.13+dfsg-2ubuntu0.3            >
+ii  cpp                                        4:9.3.0-1ubuntu2                >
+ii  cpp-9                                      9.4.0-1ubuntu1~20.04.1          >
+ii  cracklib-runtime                           2.9.6-3.2                       >
+ii  crda                                       3.18-1build1                    >
+ii  cron                                       3.0pl1-136ubuntu1               >
+ii  cryptsetup-bin                             2:2.2.2-3ubuntu2.4              >
+rc  cryptsetup-initramfs                       2:2.2.2-3ubuntu2.3              >
+ii  cups                                       2.3.1-9ubuntu1.2                >
+ii  cups-browsed                               1.27.4-1                        >
+ii  cups-bsd                                   2.3.1-9ubuntu1.2                >
+lines 73-95
+^C
+mikitka@mikitka:~/somefolder/animals$ dpkg -l | grep cheese
+ii  cheese                                     3.34.0-1ubuntu1                     amd64        tool to take pictures and videos from your webcam
+ii  cheese-common                              3.34.0-1ubuntu1                     all          Common files for the Cheese tool to take pictures and videos
+ii  libcheese-gtk25:amd64                      3.34.0-1ubuntu1                     amd64        tool to take pictures and videos from your webcam - widgets
+ii  libcheese8:amd64                           3.34.0-1ubuntu1                     amd64        tool to take pictures and videos from your webcam - base library
+mikitka@mikitka:~/somefolder/animals$ dpkg find opera
+dpkg: ошибка: укажите требуемое действие
+
+Справка по установке и удалению пакетов доступна по команде dpkg --help [*];
+Программа «apt» или «aptitude» предоставляет дружественный интерфейс
+управления пакетами;
+Чтобы получить список значений флагов отладки dpkg, введите dpkg -Dhelp;
+Чтобы получить информацию об игнорировании проблем, введите dpkg --force-help;
+Чтобы получить справку по работе с файлами *.deb, введите dpkg-deb --help;
+
+Команды, отмеченные [*], выводят большое количество информации.
+Объедините их в конвейер с программами «less» или «more»!
+mikitka@mikitka:~/somefolder/animals$ dpkg --help
+Использование: dpkg [<параметр> …] <команда>
+
+Commands:
+  -i|--install       <.deb file name>... | -R|--recursive <directory>...
+  --unpack           <.deb file name>... | -R|--recursive <directory>...
+  -A|--record-avail  <.deb file name>... | -R|--recursive <directory>...
+  --configure        <package>... | -a|--pending
+  --triggers-only    <package>... | -a|--pending
+  -r|--remove        <package>... | -a|--pending
+  -P|--purge         <package>... | -a|--pending
+  -V|--verify [<package>...]       Verify the integrity of package(s).
+  --get-selections [<pattern>...]  Get list of selections to stdout.
+  --set-selections                 Set package selections from stdin.
+  --clear-selections               Deselect every non-essential package.
+  --update-avail [<Packages-file>] Replace available packages info.
+  --merge-avail [<Packages-file>]  Merge with info from file.
+  --clear-avail                    Erase existing available info.
+  --forget-old-unavail             Forget uninstalled unavailable pkgs.
+  -s|--status [<package>...]       Display package status details.
+  -p|--print-avail [<package>...]  Display available version details.
+  -L|--listfiles <package>...      List files 'owned' by package(s).
+  -l|--list [<pattern>...]         List packages concisely.
+  -S|--search <pattern>...         Find package(s) owning file(s).
+  -C|--audit [<package>...]        Check for broken package(s).
+  --yet-to-unpack                  Print packages selected for installation.
+  --predep-package                 Print pre-dependencies to unpack.
+  --add-architecture <arch>        Add <arch> to the list of architectures.
+  --remove-architecture <arch>     Remove <arch> from the list of architectures.
+  --print-architecture             Print dpkg architecture.
+  --print-foreign-architectures    Print allowed foreign architectures.
+  --assert-<feature>               Assert support for the specified feature.
+  --validate-<thing> <string>      Validate a <thing>'s <string>.
+  --compare-versions <a> <op> <b>  Compare version numbers - see below.
+  --force-help                     Show help on forcing.
+  -Dh|--debug=help                 Show help on debugging.
+
+  -?, --help                          Вывести это сообщение
+  --version                           Вывести номер версии
+
+Assertable features: support-predepends, working-epoch, long-filenames,
+  multi-conrep, multi-arch, versioned-provides.
+
+Validatable things: pkgname, archname, trigname, version.
+
+Use dpkg with -b, --build, -c, --contents, -e, --control, -I, --info,
+  -f, --field, -x, --extract, -X, --vextract, --ctrl-tarfile, --fsys-tarfile
+on archives (type dpkg-deb --help).
+
+Параметры:
+  --admindir=<каталог>             Использовать <каталог> вместо /var/lib/dpkg
+  --root=<каталог>                 Установить в другой
+                                   корневой каталог
+  --instdir=<каталог>              Изменить корневой каталог для
+                                   установки, не меняя административный
+                                   каталог
+  --path-exclude=<шабл>            Не устанавливать пути, которые совпадают
+                                   с данным шаблоном оболочки.
+  --path-include=<шабл>            Повторно включить шаблон после
+                                   предыдущего исключения.
+  -O|--selected-only               Пропустить не выбранные для
+                                   установки/обновления пакеты
+  -E|--skip-same-version           Пропустить пакеты, версия
+                                   которых совпадает с установленной
+  -G|--refuse-downgrade            Пропустить пакеты, версия
+                                   которых младше установленной
+  -B|--auto-deconfigure            Установить, даже если это может сделать
+                                   другие пакеты неработоспособными
+  --[no-]triggers                  Пропустить или принудительно выполнить
+                                   последовательную обработку триггеров
+  --verify-format=<формат>         Проверить формат вывода
+                                   (поддерживается: «rpm»).
+  --no-debsig                      Не проверять подписи пакетов
+  --no-act|--dry-run|--simulate
+                                   Показать, что должно быть сделано, но
+                                   не выполнять действия
+  -D|--debug=<восьм. знач.>        Включить отладку,
+                                   см. -Dhelp или --debug=help
+  --status-fd <n>                  Вывести информацию об изменениях
+                                   состояний пакетов в
+                                   файловый дескриптор <n>
+  --status-logger=<команда>        Посылать изменение состояния
+                                   <командному> stdin
+  --log=<имя файла>                Записывать изменения состояний
+                                   и действия в <имя файла>
+  --ignore-depends=<пакет>,…
+                                   Игнорировать зависимости от <пакета>
+  --force-…                      Игнорировать проблемы, см. --force-help
+  --no-force-…|--refuse-…
+                                   Прекратить работу при
+                                   обнаружении проблем
+  --abort-after <n>                Прекратить работу после
+                                   обнаружения <n> количества ошибок
+
+Операторы сравнения, возможные в --compare-versions:
+  lt le eq ne ge gt       (пустое значение версии считать самой ранней);
+  lt-nl le-nl ge-nl gt-nl (пустое значение версии считать самой поздней);
+  < << <= = >= >> >       (для совместимости с синтаксисом файла control).
+
+Программы «apt» или «aptitude» предоставляют дружественный интерфейс
+управления пакетами.
+mikitka@mikitka:~/somefolder/animals$ dpkg opera
+dpkg: ошибка: укажите требуемое действие
+
+Справка по установке и удалению пакетов доступна по команде dpkg --help [*];
+Программа «apt» или «aptitude» предоставляет дружественный интерфейс
+управления пакетами;
+Чтобы получить список значений флагов отладки dpkg, введите dpkg -Dhelp;
+Чтобы получить информацию об игнорировании проблем, введите dpkg --force-help;
+Чтобы получить справку по работе с файлами *.deb, введите dpkg-deb --help;
+
+Команды, отмеченные [*], выводят большое количество информации.
+Объедините их в конвейер с программами «less» или «more»!
+mikitka@mikitka:~/somefolder/animals$ dpkg -i opera
+dpkg: ошибка: запрошенная операция требует привилегий суперпользователя
+mikitka@mikitka:~/somefolder/animals$ sudo dpkg -i opera
+[sudo] пароль для mikitka: 
+dpkg: ошибка: cannot access archive 'opera': Нет такого файла или каталога
+mikitka@mikitka:~/somefolder/animals$ sudo dpkg find opera
+dpkg: ошибка: укажите требуемое действие
+
+Справка по установке и удалению пакетов доступна по команде dpkg --help [*];
+Программа «apt» или «aptitude» предоставляет дружественный интерфейс
+управления пакетами;
+Чтобы получить список значений флагов отладки dpkg, введите dpkg -Dhelp;
+Чтобы получить информацию об игнорировании проблем, введите dpkg --force-help;
+Чтобы получить справку по работе с файлами *.deb, введите dpkg-deb --help;
+
+Команды, отмеченные [*], выводят большое количество информации.
+Объедините их в конвейер с программами «less» или «more»!
+mikitka@mikitka:~/somefolder/animals$ sudo dpkg search opera
+dpkg: ошибка: укажите требуемое действие
+
+Справка по установке и удалению пакетов доступна по команде dpkg --help [*];
+Программа «apt» или «aptitude» предоставляет дружественный интерфейс
+управления пакетами;
+Чтобы получить список значений флагов отладки dpkg, введите dpkg -Dhelp;
+Чтобы получить информацию об игнорировании проблем, введите dpkg --force-help;
+Чтобы получить справку по работе с файлами *.deb, введите dpkg-deb --help;
+
+Команды, отмеченные [*], выводят большое количество информации.
+Объедините их в конвейер с программами «less» или «more»!
+mikitka@mikitka:~/somefolder/animals$ sudo dpkg -i zip_3.0-4_i386.deb
+dpkg: ошибка: cannot access archive 'zip_3.0-4_i386.deb': Нет такого файла или каталога
+mikitka@mikitka:~/somefolder/animals$ 
+
+mikitka@mikitka:~/somefolder/animals$ sudo - u root -p mysql
+[sudo] пароль для mikitka: 
+sudo: -: команда не найдена
+mikitka@mikitka:~/somefolder/animals$ mysql -u root -p
+Enter password: 
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+mikitka@mikitka:~/somefolder/animals$ mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.32-0ubuntu0.20.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database Man's_friends
+    '> create table pets
+    '> Select * from Man's_friens;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s_friends
+create table pets
+Select * from Man's_friens' at line 1
+mysql> create databse man's_friends;
+    '> create table pets;
+    '> Select * from Man's_friens;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databse man's_friends;
+create table pets;
+Select * from Man's_friens' at line 1
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mobile             |
+| mysql              |
+| performance_schema |
+| sys                |
+| vk                 |
++--------------------+
+6 rows in set (0,00 sec)
+
+mysql> create database men's_friends;
+    '> show databases;
+    '> 
+    '> create databse man's_friends;
+create table pets;
+Select * from Man's_friens;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s_friends;
+show databases;
+
+create databse man's_friends' at line 1
+ERROR 1046 (3D000): No database selected
+    '> show databases;
+    '> 
+    '> 
+
+^C
+mysql> CREATE DATABASE mans_friends;
+Query OK, 1 row affected (0,00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mans_friends       |
+| mobile             |
+| mysql              |
+| performance_schema |
+| sys                |
+| vk                 |
++--------------------+
+7 rows in set (0,00 sec)
+
+mysql> Create table pets from mans_friends;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from mans_friends' at line 1
+mysql> Create table pets  from mans_friends;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from mans_friends' at line 1
+mysql> Create table pets {
+    -> name VARCHAR(30) Not null,
+    -> what_is VARCHAR (10),
+    -> count INT)
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{
+name VARCHAR(30) Not null,
+what_is VARCHAR (10),
+count INT)' at line 1
+mysql> Create table pets ( name VARCHAR(30) Not null, what_is VARCHAR (10), count INT);
+ERROR 1046 (3D000): No database selected
+mysql> Create table pets ( name VARCHAR(30) Not null, what_is VARCHAR (10), count INT) from mans_friends;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from mans_friends' at line 1
+mysql> use mans_friends;
+Database changed
+mysql> Create table pets ( name VARCHAR(30) Not null, what_is VARCHAR (10), count INT);
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> Create table packs ( name VARCHAR(30) Not null, what_is VARCHAR (10), cou
+nt INT);
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> Create table cats ( name VARCHAR(30) Not null, what_is VARCHAR (10), coun
+t INT);
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> Create table dogs ( name VARCHAR(30) Not null, what_is VARCHAR (10), coun
+t INT);
+Query OK, 0 rows affected (0,03 sec)
+
+mysql> Create table pigs ( name VARCHAR(30) Not null, what_is VARCHAR (10), coun
+t INT);
+Query OK, 0 rows affected (0,03 sec)
+
+mysql> Create table horses ( name VARCHAR(30) Not null, what_is VARCHAR (10), co
+unt INT);
+Query OK, 0 rows affected (0,03 sec)
+
+mysql> Create table camels ( name VARCHAR(30) Not null, what_is VARCHAR (10), co
+unt INT);
+Query OK, 0 rows affected (0,03 sec)
+
+mysql> Create table donkeys ( name VARCHAR(30) Not null, what_is VARCHAR (10), c
+ount INT);
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> insert cats( name, what_is, count)
+    -> Values ('Barsik', 'cat', 6);
+Query OK, 1 row affected (0,02 sec)
+
+mysql> insert dogs( name, what_is, count) Values ('Bobik', 'dog', 26);
+Query OK, 1 row affected (0,01 sec)
+
+mysql> insert pigs( name, what_is, count) Values ('Stepan', 'pig', 226);
+Query OK, 1 row affected (0,00 sec)
+
+mysql> insert horses( name, what_is, count) Values ('Luba', 'horse', 1990);
+Query OK, 1 row affected (0,00 sec)
+
+mysql> insert camels( name, what_is, count) Values ('Serg', 'camel', 1988);
+Query OK, 1 row affected (0,00 sec)
+
+mysql> insert donkeys( name, what_is, count) Values ('Oleg', 'donkey', 1968);
+Query OK, 1 row affected (0,01 sec)
+
+mysql> insert packs( name, what_is, count) Values ('Oleg', 'donkey', 1968);
+Query OK, 1 row affected (0,01 sec)
+
+mysql> insert packs( name, what_is, count) Values ('Luba', 'Horse', 1990);
+Query OK, 1 row affected (0,01 sec)
+
+mysql> drop table camels;
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> drop table horses;
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> drop table donkeys;
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> create table young (name VARCHAR(30), what_is (10), age Int)
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(10), age Int)' at line 1
+mysql> create table young (name VARCHAR(30), what_is varchar(10), age Int);
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> select * from mans_friends
+    -> where age>1988;
+ERROR 1146 (42S02): Table 'mans_friends.mans_friends' doesn't exist
+mysql> select *  where age>1988;
+ERROR 1096 (HY000): No tables used
+mysql> select * packs where age>1988;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'packs where age>1988' at line 1
+mysql> select * packs where age > 1988;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'packs where age > 1988' at line 1
+mysql> 
+
